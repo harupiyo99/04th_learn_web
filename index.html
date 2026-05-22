@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第4回ゲームテンプレート</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 32px auto; padding: 0 16px; }
+    .box { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+    button { padding: 10px 16px; font-size: 1rem; }
+    input { padding: 8px; width: 100%; max-width: 280px; box-sizing: border-box; }
+    #click-button {font-size: 80px;cursor: pointer; background: none; border: none; outline: none;}
+    #coin-container { text-align: center;}
+  </style>
+</head>
+<body>
+
+  <h1>第4回：ゲームテンプレート</h1>
+  <div class="box">
+    <label for="playerName">プレイヤー名</label><br />
+    <input id="playerName" type="text" placeholder="名前を入力してください" />
+  </div>
+
+  <div class="box score-board">
+    <div>持っているコイン: <span id="coinCount">0</span> 枚</div>
+
+  </div>
+
+  <div id="coin-container">
+    <button id="click-button">🪙</button>
+  </div>
+
+  <div class="box">
+    <button id="saveButton">セーブ</button>
+  </div>
+
+  <div class="box" id="unlockArea" style="display: none;">
+    <p>おめでとう！アンロックされました！</p>
+    <button id="specialButton">スペシャルアイテムを使う</button>
+  </div>
+
+  <!--
+    ここから先は配布用の虫食いテンプレートです。
+    1) まずはこのままブラウザで開いて動作を確認する
+    2) `11_サンプルコード.js` のコメントを読みながら、必要な関数や処理を埋める
+    3) あとで見た目やテーマを自由に変える
+  -->
+
+  <script src="script.js"></script>
+</body>
+</html>
