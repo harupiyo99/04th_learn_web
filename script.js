@@ -60,6 +60,20 @@ function loadGame() {
   // ここに実装を書きましょう
 }
 
+// ランダム移動
+function moveCoinRandomly() {
+  const coin = document.getElementById('clickButton');
+  
+  // -50px から +50px の範囲でランダムな数値を計算
+  const randomX = Math.floor(Math.random() * 101) - 50;
+  
+  // コインの横位置（left）を変更する
+  coin.style.left = randomX + 'px';
+}
+
+// 0.3秒（300ミリ秒）ごとに上の移動処理をずっと繰り返す
+setInterval(moveCoinRandomly, 300);
+
 // 7) 初期化: イベントをつなぐ（変更しない）
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('clickButton').addEventListener('click', plusCoin);
