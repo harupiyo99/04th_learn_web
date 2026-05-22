@@ -65,7 +65,7 @@ function moveCoinRandomly() {
   const coin = document.getElementById('clickButton');
   
   // -50px から +50px の範囲でランダムな数値を計算
-  const randomX = Math.floor(Math.random() * 101) - 50;
+  const randomX = Math.floor(Math.random() * 101) - 300;
   
   // コインの横位置（left）を変更する
   coin.style.left = randomX + 'px';
